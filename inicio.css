@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.Dashboard{
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo_Dashboard{
+    max-height: 50px;
+    width: auto;
+
+}
+.Menu_Toggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+    margin-left: 1rem;
+}
+.Menu_Horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+.Menu_Horizontal li a{
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.Menu_Horizontal li a:hover{
+    background-color: orangered;
+    color: white;
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+.Menu_Vertical{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.Menu_Horizontal li:hover .Menu_Vertical{
+    display: block;
+}
+.Menu_Vertical li a{
+    background-color: orangered;
+    color: white;
+    width: 12rem;
+    margin-bottom: 3px;
+    border: 2px solid white;
+}
+.Boton_Contacto{
+    background-color: orangered;
+    color: white;
+    border-radius: 25px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+}
+.Inicio{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Conteiner_Inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+.Presentacion img{
+    height: 350px ;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.Presentacion{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Presentacion p{
+    font-size: 30px;
+}
+.Formulario{
+    border: none;
+    text-align: center;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: orangered;
+    color: white;
+}
+.Formulario h4{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.Formulario p{
+    margin-bottom: 20px;
+}
+.Formulario label{
+    display: block;
+    text-align: left;
+}
+.Formulario input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+.Formulario textarea{
+    height: 150px;
+    width: 100%;
+    border-radius: 25px;
+}
+.Boton_Inicio{
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.Nosotros{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    background: url(img/FondoContabilidad.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Nosotros h2{
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+.Conteiner_Nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.Nosotros_Mision img{
+  height: 300px;  
+  border-radius: 360px;
+}
+
+.Nosotros_Vision img{
+    height: 300px;
+    border-radius: 360px;
+}
+.Nosotros_Mision p{
+    text-align: center;
+}
+.Nosotros_Vision p{
+    text-align: center;
+}
+.Nosotros_Mision{
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 190px;
+    height: 450px;
+    width: 60%;
+    background-color: white;
+}
+.Nosotros_Vision{
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 190px;
+    height: 450px;
+    width: 60%;
+    background-color: white;
+}
+.Ubicacion{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    background-color: skyblue;
+}
+.Ubicacion h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.Conteiner_Ubicacion iframe{
+    border-radius: 25px;
+}
+.Contactanos{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Container_Contactanos h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.Container_Contactanos{
+    text-align: center;
+    border: 2px solid red;
+    width: 50%;
+    border-radius: 25px;
+    padding: 50px;
+    background-color: orangered;
+    color: white;
+}
+.Container_Contactanos textarea{
+    height: 150px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+}
+.Container_Contactanos label{
+    display: block;
+    text-align: left;
+}
+.Container_Contactanos select{
+    width: 100%;
+    border-radius: 25px;
+    height: 35px;
+    border: none;
+}
+.Container_Contactanos input{
+    width: 100%;
+    border-radius: 25px;
+    height: 35px;
+    border: none;
+}
+.Boton_Contactanos{
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+
+
+.Servicios{
+    padding-top: 5rem;
+
+}
+.Container_Servicios{
+    background-image: url(img/SERVICIOS.webp);
+    height: 300px;
+    width: 100%;
+    opacity: 0.5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Container_Servicios h1{
+    margin-left: 6rem;
+    font-size: 80px;
+    color: black;
+}
+
+
+.Ofrecemos{
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.Ofrecemos_texto{
+    max-width: 900px;
+    margin: 40px auto;
+}
+.Ofrecemos_texto p{
+    font-size: 18px;
+  line-height: 1.8;
+  color: #374151;
+  text-align: justify;
+}
+.overlay_left h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.overlay_right h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.overlay_left {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.imageL {
+  display: block;
+  width: 80%;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.overlayL {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: blue;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 25px;
+  margin-left: 145px;
+}
+
+.overlay_left:hover .overlayL {
+  width: 80%;
+}
+
+.textL {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+
+.overlay_right {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.imageR {
+  display: block;
+  width: 80%;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.overlayR {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 25px;
+  margin-left: 145px;
+}
+
+.overlay_right:hover .overlayR {
+  width: 80%;
+  left: 0;
+}
+
+.textR {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: blue;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    color: white;
+}
+.Conteiner_Fotter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+}
+.Logo_Footer{
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+}
+.Footer_Logo{
+    text-align: center;
+}
+.Footer_Contacto{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
